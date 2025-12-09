@@ -1,0 +1,15 @@
+package Recheckjava;
+
+class Car {
+	String model; // default access
+}
+
+public class DefaultAccessmodifier {
+
+	public static void main(String[] args) {
+
+		Car c = new Car();
+		c.model = "Tesla"; // accessible within the same package
+		System.out.println(c.model);
+	}
+}
